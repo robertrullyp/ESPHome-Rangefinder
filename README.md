@@ -11,6 +11,7 @@ Untuk HC-SR04:
 ![HC-SR04-jumper](https://inwfile.com/s-j/afo1mt.jpg)
 
 Untuk SR04M-2 tambahkan resistor 47kΩ pada R27 atau short jumper pada R27 untuk merubah ke mode uart automatic.
+
 ![SR04M-2-jumper](https://circuitdigest.com/sites/default/files/inlineimages/u5/R27-jumper-in-Ultrasonic-Module.jpg)
 
 
@@ -25,7 +26,9 @@ Untuk SR04M-2 tambahkan resistor 47kΩ pada R27 atau short jumper pada R27 untu
 2. Buat/tambahkan integrasi di Home Assistant, Template(helper) integration pilih tipe entity number atau boleh disesuaikan saja, ini untuk melakukan kalkulasi menggunakan jinja template agar mendapatkan nilai persentase air hingga volume air dalam Tandon berdasarkan ketinggian (nilai jarak dari sensor ultrasonic). 
     ![NumberTemplate](https://github.com/user-attachments/assets/ac4871af-614a-47db-940f-e56a662399ed)
     ![JinjaTemplate](https://github.com/user-attachments/assets/5606ed03-c174-4ef0-93e7-a545b08e3a16)
+    
     Pada Template Options, State Template silahkan disesuaikan kembali :
+
         {% set jarak = states('sensor.esp32c3_mqtt_hcsr04_ultrasonic_distance')|float(0) %} 
         {% set gap = 20 %} 
         {% set tinggitank = 180 %} 
@@ -36,6 +39,7 @@ Untuk SR04M-2 tambahkan resistor 47kΩ pada R27 atau short jumper pada R27 untu
 3. Buat card untuk entity number yang telah dibuat tadi, untuk card seperti pada deskripsi perlu install custom components di hacs, diantaranya :
     - fluid-level-background-card
     - card-templater
+
 Code cardnya silahkan disesuaikan :
 
         type: picture-elements

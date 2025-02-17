@@ -6,7 +6,7 @@ Memanfaatkan sensor jarak untuk mengukur level ketinggian air (isi) hingga volum
 
 ## PERSIAPAN
 1. Pastikan sensor menggunakan **mode uart**, silahkan sesuaikan dengan versi yang kalian punya.
-Untuk HC-SR04:
+Untuk HC-SR04 beri resistor 10kΩ atau di beberapa versi bisa dengan short jumper :
 ![HC-SR04-jumper](https://ptsolns.com/cdn/shop/files/Modes.jpg?v=1697006723&width=1445)
 ![HC-SR04-jumper](https://inwfile.com/s-j/afo1mt.jpg)
 

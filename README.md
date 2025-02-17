@@ -19,7 +19,7 @@ Untuk SR04M-2 tambahkan resistor 47kΩ pada R27 atau short jumper pada R27 untu
     - [Getting Started with the ESPHome Command Line](https://esphome.io/guides/getting_started_command_line.html)
     - [Installing ESPHome Manually](https://esphome.io/guides/installing_esphome)
 
-3. Pastikan header file (.h) ditempatkan didalam direktory project kalian (satu direktori dengan file .yaml)
+3. Pastikan header file untuk custom component (.h) ditempatkan didalam direktory project kalian (satu direktori dengan file .yaml)
 
 ## LANGKAH INSTALASI
 1. Sesuaikan konfigurasi esphome dengan board esp yang digunakan lalu flash ke MCU.
@@ -40,7 +40,7 @@ Untuk SR04M-2 tambahkan resistor 47kΩ pada R27 atau short jumper pada R27 untu
     - fluid-level-background-card
     - card-templater
 
-Code cardnya silahkan disesuaikan :
+    Code cardnya silahkan disesuaikan :
 
         type: picture-elements
         elements:
@@ -138,3 +138,5 @@ Code cardnya silahkan disesuaikan :
                 width: 100% !important;
                 opacity: 1
             }
+
+        ![Image](https://github.com/user-attachments/assets/9ebe9335-35d4-4976-8d0a-18a0714ce7b2)

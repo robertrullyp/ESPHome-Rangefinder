@@ -2,7 +2,7 @@ esphome:
   name: esp32c3-mqtt-sr04m-2
   friendly_name: esp32c3-mqtt-sr04m-2
   includes:
-    - SR04M-2.h
+    - uart_rcwl_1655.h
 
 esp32:
   board: esp32-c3-devkitm-1

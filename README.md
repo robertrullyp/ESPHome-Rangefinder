@@ -139,4 +139,5 @@ Untuk SR04M-2 tambahkan resistor 47kΩ pada R27 atau short jumper pada R27 untu
                 opacity: 1
             }
 
+
         ![Image](https://github.com/user-attachments/assets/9ebe9335-35d4-4976-8d0a-18a0714ce7b2)
